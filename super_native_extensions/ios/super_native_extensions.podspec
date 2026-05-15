@@ -20,7 +20,7 @@ A new Flutter plugin project.
 
   s.script_phase = {
     :name => 'Build SuperNativeExtensions Rust library',
-    :script => <<-SCRIPT
+    :script => <<-SCRIPT,
       PREBUILT="$PODS_TARGET_SRCROOT/Prebuilt/$PLATFORM_NAME/libsuper_native_extensions.a"
       if [ -f "$PREBUILT" ]; then
         echo "Using pre-built libsuper_native_extensions.a for $PLATFORM_NAME"
